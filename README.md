@@ -46,7 +46,7 @@ An AI-powered phishing email detection system built with **React.js + Flask API*
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/phishing-detector-frontend.git
+git clone https://github.com/shruta99-cse/phishing-detector-frontend.git
 cd frontend
 npm install
-npm start# PhishGuard AI - Phishing Detection SaaS 
+npm start
