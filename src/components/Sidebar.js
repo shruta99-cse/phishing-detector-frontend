@@ -36,7 +36,7 @@ function Sidebar({ darkMode }) {
 
   return (
     <>
-      {/* 🔥 HAMBURGER ONLY MOBILE */}
+      {/* HAMBURGER */}
       {isMobile && (
         <button
           onClick={() => setOpen(!open)}
@@ -89,7 +89,6 @@ function Sidebar({ darkMode }) {
             : "#fff",
 
           color: darkMode ? "#e5e7eb" : "#111",
-
           borderRight: "1px solid rgba(255,255,255,0.08)",
         }}
       >
@@ -104,8 +103,6 @@ function Sidebar({ darkMode }) {
         >
           📧 PhishGuard AI
         </h2>
-
-        <p style={{ fontSize: "12px", opacity: 0.6 }}>MAIN</p>
 
         {/* MENU */}
         {menu.map((item, i) => (
@@ -137,22 +134,7 @@ function Sidebar({ darkMode }) {
           </div>
         ))}
 
-        {/* ACCOUNT */}
-        <p style={{ fontSize: "12px", opacity: 0.6, marginTop: "15px" }}>
-          ACCOUNT
-        </p>
-
-        <div
-          onClick={() => navigate("/profile")}
-          style={{
-            padding: "10px",
-            borderRadius: "10px",
-            cursor: "pointer",
-          }}
-        >
-          👤 Profile
-        </div>
-
+        {/* LOGOUT */}
         <div
           onClick={logout}
           style={{
